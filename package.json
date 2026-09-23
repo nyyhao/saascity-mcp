@@ -1,0 +1,38 @@
+{
+  "name": "saascity-mcp",
+  "version": "2.0.0",
+  "description": "MCP server for launching a product: audit your site, pick from 1,600+ launch directories with DR and link type, and list on SaaSCity.",
+  "mcpName": "io.saascity/saascity",
+  "type": "module",
+  "bin": {
+    "saascity-mcp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "product-launch",
+    "startup-directories",
+    "backlinks",
+    "seo",
+    "saas",
+    "launch"
+  ],
+  "homepage": "https://saascity.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyyhao/saascity-mcp.git"
+  },
+  "license": "MIT",
+  "author": "SaaSCity <support@saascity.io> (https://saascity.io)"
+}

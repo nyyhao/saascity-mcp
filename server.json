@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.saascity/saascity",
+  "title": "SaaSCity",
+  "description": "Audit your site, pick from 1,600+ launch directories by DR and link type, and list on SaaSCity.",
+  "version": "2.0.0",
+  "websiteUrl": "https://saascity.io",
+  "repository": {
+    "url": "https://github.com/nyyhao/saascity-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://saascity.io/apple-touch-icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "180x180"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://saascity.io/api/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "saascity-mcp",
+      "version": "2.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
