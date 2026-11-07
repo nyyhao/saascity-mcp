@@ -36,6 +36,7 @@ Then start a new session and ask, for example:
 | `submit_project` | Creates an inert SaaSCity draft and returns a claim link. |
 | `get_submission_status` | Where a submission stands, by claim token or listing slug. |
 | `check_badge` | Checks whether the SaaSCity badge is live on a site. |
+| `check_backlink` | Checks whether a directory listing page links to your site and whether that link is followed: rel nofollow, ugc or sponsored, hidden links, redirect-only links, and page-level noindex, nofollow and canonical. |
 | `search_listings`, `get_listing`, `find_alternatives`, `get_leaderboard` | Search the products listed on SaaSCity, for market and competitor research. |
 | `calculate_arr`, `calculate_arr_bridge`, `calculate_churn`, `calculate_nrr`, `rule_of_40`, `calculate_nps`, `ab_test_significance`, `markup_margin`, `uptime_downtime` | SaaS metric calculators. They compute from the numbers you pass and read no data. |
 
@@ -48,9 +49,9 @@ The package marks the `saascity` server `untrusted`. Every tool is annotated `re
 ## Disclosure
 
 - Every tool call goes over HTTPS to `saascity.io`, which SaaSCity runs. Nothing else is contacted.
-- `check_launch_readiness` and `check_badge` make saascity.io fetch the URL you give it (the page, its og:image, robots.txt and sitemap).
+- `check_launch_readiness`, `check_badge` and `check_backlink` make saascity.io fetch the URL you give it (the page, its og:image, robots.txt and sitemap).
 - `submit_project` sends the product details you approved to SaaSCity and stores them as a draft, with the caller's IP address for abuse limits. An unclaimed draft expires after 7 days.
-- Rate limits are counted per IP: `submit_project` 5 a day, `check_launch_readiness` 20 an hour, `check_badge` 30 an hour, the rest 30 to 60 a minute.
+- Rate limits are counted per IP: `submit_project` 5 a day, `check_launch_readiness` 20 an hour, `check_badge` 30 an hour, `check_backlink` 60 an hour, the rest 30 to 60 a minute.
 - The server keeps no session, sets no cookies and needs no credentials. The package stores nothing on your machine.
 - The tool set is served by the remote server at runtime and is not covered by the catalog's pinned commit.
 - saascity.io is not available in every region. Where it is blocked, the server answers HTTP 451 and the tools do not load.

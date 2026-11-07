@@ -34,6 +34,8 @@ Every tool named below comes from the SaaSCity MCP server, `https://saascity.io/
    inert: the user opens the link, signs in, picks a plan and a launch week and pays. Nothing is
    published or charged before that, and a person reviews every listing.
    `get_submission_status` with the `claimToken` shows where it stands later.
+7. **Check the links once listings are live.** Call `check_backlink` with each directory listing page
+   and the user's site, and report which ones link with a followed link.
 
 ## Reporting rules
 
