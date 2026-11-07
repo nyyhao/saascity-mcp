@@ -1,6 +1,6 @@
 {
   "name": "saascity-mcp",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "MCP server for launching a product: audit your site, pick from 1,600+ launch directories with DR and link type, and list on SaaSCity.",
   "mcpName": "io.saascity/saascity",
   "type": "module",

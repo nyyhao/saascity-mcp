@@ -3,7 +3,7 @@
   "name": "io.saascity/saascity",
   "title": "SaaSCity",
   "description": "Audit your site, pick from 1,600+ launch directories by DR and link type, and list on SaaSCity.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "websiteUrl": "https://saascity.io",
   "repository": {
     "url": "https://github.com/nyyhao/saascity-mcp",
@@ -11,10 +11,10 @@
   },
   "icons": [
     {
-      "src": "https://saascity.io/apple-touch-icon.png",
+      "src": "https://saascity.io/android-chrome-512x512.png",
       "mimeType": "image/png",
       "sizes": [
-        "180x180"
+        "512x512"
       ]
     }
   ],
@@ -28,7 +28,7 @@
     {
       "registryType": "npm",
       "identifier": "saascity-mcp",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "transport": {
         "type": "stdio"
       }
