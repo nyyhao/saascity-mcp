@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "saascity": {
+      "type": "streamable-http",
+      "url": "https://saascity.io/api/mcp"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "saascity",
+  "version": "1.0.0",
+  "description": "Plan a product launch with SaaSCity's MCP server: audit a homepage before launch, pick launch directories from 1,600+ with Ahrefs DR, link type and price, and draft a SaaSCity listing for a human to review.",
+  "author": {
+    "name": "SaaSCity",
+    "email": "support@saascity.io",
+    "url": "https://saascity.io"
+  },
+  "homepage": "https://saascity.io/mcp",
+  "repository": "https://github.com/nyyhao/saascity-mcp",
+  "license": "MIT",
+  "keywords": [
+    "launch",
+    "startup-directories",
+    "backlinks",
+    "seo",
+    "saas",
+    "mcp"
+  ]
+}
